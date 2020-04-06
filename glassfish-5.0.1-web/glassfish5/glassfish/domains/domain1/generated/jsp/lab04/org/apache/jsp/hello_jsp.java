@@ -65,6 +65,15 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("<h1>Witaj, ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${person.firstName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(' ');
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${person.lastName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("!</h1>\r\n");
+      out.write("<a href=\"mailto:");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${person.email}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\">Mail</a>\r\n");
+      out.write("\r\n");
+      out.write("<h1>Witaj, ");
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
       out.write(' ');
